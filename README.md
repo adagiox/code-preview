@@ -1,6 +1,4 @@
-# code-preview
-A nice little code preview.
-
-Like slack/messenger/twitter unfurl but for your code.
+# repo-preview
+Fetch a summary of a repo.
 
 [ ] Github

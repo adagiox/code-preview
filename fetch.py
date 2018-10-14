@@ -47,7 +47,6 @@ class Github:
             self.data['avatar'] = soup.find("meta", attrs={"property":"og:image"})['content']
             self.data['description'] = soup.find("meta", attrs={"property":"og:description"})['content']
             if self.data['description'].endswith('development by creating an account on GitHub.'):
-                print(self.data['description'])
                 self.data['description'] = self.data['description'][:-61-len(f"{self.owner}/{self.repo}")]
             self._set_topics(soup)
             self._set_repo_details(soup)
